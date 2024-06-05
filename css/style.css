@@ -1,9 +1,32 @@
 body {
-    background-color: antiquewhite;
-}
-
-.banner {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  
+  section {
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .section1 {
+    background-image: url(../assets/BGhome.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .Banner {
     display: flex;
     justify-content: center;
     margin-top: 5px;
-}
+    margin-left: 50px;
+  }
+  
