@@ -1,32 +1,23 @@
+/* CSS untuk latar belakang yang mengisi seluruh layar */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .container {
-    width: 100%;
-    height: 100vh;
-    overflow-y: scroll;
-  }
-  
-  section {
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .section1 {
-    background-image: url(../assets/BGhome.png);
-    background-size: cover;
+    background-image: url(../assets/BG.png);
+    background-size: cover; /* Mengisi seluruh area body */
+    background-repeat: no-repeat;
     background-position: center;
   }
   
+  /* CSS untuk mengganti gambar latar belakang saat layar kecil */
+  @media (max-width: 768px) {
+    body {
+      background-image: url(../assets/BGC.png);
+    }
+  }
+  
+  /* CSS untuk menampilkan banner di tengah */
   .Banner {
     display: flex;
     justify-content: center;
     margin-top: 5px;
-    margin-left: 50px;
+    margin-left: 100px;
   }
   
