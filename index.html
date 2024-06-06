@@ -7,18 +7,17 @@
   <link rel="stylesheet" href="css/style.css">
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
+      
       background-image: url(assets/bckground\ base\ colour.png);
       background-size: cover;
     }
 
     .Banner {
-      margin-top: 20px; /* Sesuaikan margin atas sesuai kebutuhan */
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      margin-left: 150px;
+      position: relative;
     }
 
     .gng {
@@ -28,18 +27,37 @@
     }
 
     .gng img {
-      width: 45%; /* Sesuaikan ukuran gunung sesuai kebutuhan */
+      width: 35%; /* Sesuaikan ukuran gunung sesuai kebutuhan */
     }
 
     
   </style>
 </head>
 <body>
-  <section class="main"></section>
+  <header>
+    <div class="container">
+        <nav style="display: flex; justify-content: space-between;">
+            <h1>Nihongokita</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+  <section class="main">
+
+    <div class="awn">
+      <img src="assets/AKR.png" alt="">
+      <img src="assets/AKN.png" alt="">
+    </div>
     <img class="Banner" src="assets/banner.svg" alt="Banner">
     <div class="gng">
       <img class="gunung-kiri" src="assets/GKR.png" alt="Gunung Kiri">
       <img class="gunung-kanan" src="assets/GKN.png" alt="Gunung Kanan">
     </div>
+  </section>
 </body>
 </html>
