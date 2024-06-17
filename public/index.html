@@ -19,6 +19,7 @@
         font-family: Arial, sans-serif;
       }
       .header {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -96,21 +97,18 @@
         width: 35%;
       }
       .textbox {
-        background-color: #8B0000;
-        color: white;
+        background-color: #A62B00;
+        color: #DFBD79;
         border: 2px solid #000;
         padding: 20px;
         text-align: center;
         font-size: 24px;
         border-radius: 10px;
         width: 80%;
-        max-width: 500px;
+        max-width: 700px;
         margin: 50px auto;
       }
 
-      .textbox h3 {
-        margin: 0;
-      }
 
       @media (max-width: 768px) {
         .header .nav-links {
@@ -126,6 +124,7 @@
         }
 
         .Banner {
+          margin-top: 75px;
           width: 80%;
         }
 
@@ -137,14 +136,18 @@
 
       @media (max-width: 480px) {
         .awn img, .gng img {
-          width: 60%;
+          visibility: collapse;
         }
 
         .Banner {
+          
+          margin-top: 50px;
           width: 90%;
         }
 
         .textbox {
+          position: relative;
+          margin-bottom: 50px;
           font-size: 16px;
         }
       }
@@ -186,8 +189,7 @@
       </div>
       <img class="Banner" src="assets/Logo.svg" alt="">
       <div class="textbox">
-        <h3>About Us</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, nulla esse! Tempora repudiandae aliquid beatae inventore omnis odio amet labore, asperiores dolorem porro sequi sit tenetur dicta ut, optio architecto!</p>
+        <p>NihongKita adalah ektrakurikuler yang mewadahi pelajar untuk berkreasi dan belajar pada bidang bahasa jepang. Disini pelajar akan dibimbing bagaimana cara menulis, membaca, dan menghafalkan kosakata bahasa Jepang dengan mudah dan menyenangkan.</p>
       </div>
       <div class="gng">
         <img class="gunung-kiri" src="assets/GKR.png" alt="Gunung Kiri">
