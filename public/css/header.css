@@ -1,3 +1,5 @@
+
+      
       @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
         body {
             margin: 0;
@@ -6,8 +8,13 @@
             font-family: Arial, sans-serif;
             color: black; /* Ubah warna tulisan input menjadi hitam */
         }
-
+        .nav-links a {
+            color: #585656;
+            font-size: large;
+            font-family: 'yumin', sans-serif;
+        }
         .header {
+            opacity: 75%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -26,6 +33,7 @@
         }
 
         .nav-links {
+            font-family: 'Yu Mincho';
             display: flex;
             flex-direction: row;
             align-items: center;

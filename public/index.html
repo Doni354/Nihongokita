@@ -6,152 +6,14 @@
     <title>Nihongokita</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-      body {
-        background-image: url(assets/bckground\ base\ colour.png);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-      }
-      .header {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        padding: 20px;
-        background: rgba(255, 255, 255, 0.8);
-      }
+   @font-face { font-family: yumin; src: url('yumin.ttf'); } 
+  body {
+    font-family: 'yumin', sans-serif;
+  }
 
-      .header .logo {
-        max-height: 50px;
-      }
-
-      .header .nav-links {
-        display: flex;
-      }
-
-      .header .nav-links a {
-        margin: 0 10px;
-        text-decoration: none;
-        color: #333;
-      }
-
-      .header .hamburger {
-        display: none;
-        flex-direction: column;
-        cursor: pointer;
-      }
-
-      .header .hamburger div {
-        width: 25px;
-        height: 3px;
-        background-color: #333;
-        margin: 4px;
-      }
-
-      .header .nav-links.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        background: rgba(255, 255, 255, 0.9);
-        width: 100%;
-        left: 0;
-        text-align: center;
-      }
-
-      .main {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .awn {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-      }
-      .awn img {
-        width: 35%;
-      }
-      .Banner {
-        margin: 35px auto;
-        width: 50%;
-        margin-top: 100px;
-        position: absolute;
-      }
-      .gng {
-        display: flex;
-        margin-top: 100px;
-        justify-content: space-between;
-        width: 100%;
-      }
-      .gng img {
-        width: 35%;
-      }
-      .textbox {
-        background-color: #A62B00;
-        color: #DFBD79;
-        border: 2px solid #000;
-        padding: 20px;
-        text-align: center;
-        font-size: 24px;
-        border-radius: 10px;
-        width: 80%;
-        max-width: 700px;
-        margin: 50px auto;
-      }
-
-
-      @media (max-width: 768px) {
-        .header .nav-links {
-          display: none;
-        }
-
-        .header .hamburger {
-          display: flex;
-        }
-
-        .awn img, .gng img {
-          width: 45%;
-        }
-
-        .Banner {
-          margin-top: 75px;
-          width: 80%;
-        }
-
-        .textbox {
-          font-size: 18px;
-          width: 90%;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .awn img, .gng img {
-          visibility: collapse;
-        }
-
-        .Banner {
-          
-          margin-top: 50px;
-          width: 90%;
-        }
-
-        .textbox {
-          position: relative;
-          margin-bottom: 50px;
-          font-size: 16px;
-        }
-      }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script defer src="/__/firebase/10.12.2/firebase-app-compat.js"></script>
     <script defer src="/__/firebase/10.12.2/firebase-auth-compat.js"></script>
     <script defer src="/__/firebase/10.12.2/firebase-database-compat.js"></script>
@@ -167,13 +29,13 @@
   <body>
     <header class="header">
       <div>
-        <a href="index.html"><img class="logo" src="assets/Logo.svg" alt="Nihongokita"></a>
+        <a href="index.html"><img class="logo" src="assets/Img/Logo.svg" alt="Nihongokita"></a>
       </div>
       <div class="nav-links">
-        <a href="#">Contact Us</a>
-        <a href="#">About Us</a>
-        <a href="#">pembelajaran</a>
-        <a href="#">Prestasi</a>
+        <a href="#">News</a>
+        <a href="#">Pembelajaran</a>
+        <a href="prestasi.html">Prestasi</a>
+        <a href="#">Alumni</a>
       </div>
       <div class="hamburger" onclick="toggleMenu()">
         <div></div>
@@ -184,16 +46,16 @@
     <section class="main">
       
       <div class="awn">
-        <img src="assets/AKR.png" alt="">
-        <img src="assets/AKN.png" alt="">
+        <img src="assets/Img/AKR.png" alt="">
+        <img src="assets/Img/AKN.png" alt="">
       </div>
-      <img class="Banner" src="assets/Logo.svg" alt="">
+      <img class="Banner" src="assets/Img/Logo.svg" alt="">
       <div class="textbox">
         <p>NihongKita adalah ektrakurikuler yang mewadahi pelajar untuk berkreasi dan belajar pada bidang bahasa jepang. Disini pelajar akan dibimbing bagaimana cara menulis, membaca, dan menghafalkan kosakata bahasa Jepang dengan mudah dan menyenangkan.</p>
       </div>
       <div class="gng">
-        <img class="gunung-kiri" src="assets/GKR.png" alt="Gunung Kiri">
-        <img class="gunung-kanan" src="assets/GKN.png" alt="Gunung Kanan">
+        <img class="gunung-kiri" src="assets/Img/GKR.png" alt="Gunung Kiri">
+        <img class="gunung-kanan" src="assets/Img/GKN.png" alt="Gunung Kanan">
       </div>
     </section>
     <script>

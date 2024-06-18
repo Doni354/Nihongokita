@@ -1,0 +1,152 @@
+body {
+    background-image: url(../assets/Img/bgr.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .textbox p {
+    text-shadow: 
+                -1px -1px 0 #DFBD79, 
+                 1px -1px 0 #DFBD79, 
+                -1px  1px 0 #DFBD79, 
+                 1px  1px 0 #DFBD79;
+    color: white;
+    font-family: 'yumin', sans-serif;
+    
+    
+  }
+  .header .logo {
+    max-height: 50px;
+  }
+
+  .header .nav-links {
+    display: flex;
+  }
+
+  .header .nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .header .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .header .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px;
+  }
+
+  .header .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+
+
+
+  @media (max-width: 768px) {
+    .header .nav-links {
+      display: none;
+    }
+
+    .header .hamburger {
+      display: flex;
+    }
+
+   
+  }
+
+  @media (max-width: 480px) {
+    
+  }
+
+  .prestasi {
+    display: flex;
+    margin: 10px;
+    margin-top: 100px;
+  }
+
+/** CARD **/
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+.card {
+    width: 100%;
+    max-width: 400px;
+    
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.card img {
+    border: 3px solid #DFBD79;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.card .content {
+    padding: 20px;
+    text-align: center;
+}
+.card .content h2 {
+    font-family: 'yumin';
+    color: white;
+    
+    margin: 0;
+    font-size: 1.5em;
+
+}
+
+.card .content p {
+    color: white;
+    font-family: 'yumin';
+    margin: 10px 0 0;
+    font-size: 1.2em;
+
+}
+.card:nth-child(1) { background-color: rgba(0, 0, 0, 0.500); border: 3px solid #DFBD79;  }
+.card:nth-child(2) { background-color: rgba(0, 0, 0, 0.500); border: 3px solid #DFBD79;  }
+.card:nth-child(4) { background-color: rgba(0, 0, 0, 0.500); border: 3px solid #DFBD79;  }
+.card:nth-child(5) { background-color: rgba(0, 0, 0, 0.500); border: 3px solid #DFBD79;  }
+.card:nth-child(3) { background-color: rgba(0, 0, 0, 0.500); border: 3px solid #DFBD79;  }
+.card:nth-child(6) { background-color: rgba(0, 0, 0, 0.500); border: 3px solid #DFBD79;  }
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
