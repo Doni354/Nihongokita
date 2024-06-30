@@ -44,20 +44,25 @@
             padding: 20px;
             color: #fff;
             text-align: start; /* Rata kiri pada layar besar */
+            overflow-y: auto; /* Aktifkan scroll vertikal jika konten terlalu panjang */
+            max-height: 160px; /* Atur tinggi maksimum konten sebelum muncul scroll */
         }
 
         .card-content h2 {
             margin: 0 0 10px 0;
             font-size: 20px;
         }
-        
 
         .card-content p {
             margin: 0;
             font-size: 14px;
+            white-space: pre-line; /* Memungkinkan pemformatan teks seperti newline (\n) */
         }
 
-       
+        /* Hide scroll bar */
+        ::-webkit-scrollbar {
+            display: none; /* Sembunyikan scroll bar */
+        }
 
         /* Media Query for Responsive Design */
         @media (max-width: 768px) {
@@ -74,6 +79,8 @@
 
             .card-content {
                 text-align: center; /* Tengah pada layar kecil */
+                overflow-y: visible; /* Hapus scroll pada layar kecil */
+                max-height: none; /* Resetting max-height untuk konten */
             }
         }
     </style>
@@ -113,7 +120,6 @@
                        0813-9086-3372 (Ardika Sofi) <br>
                        @nihonkita
                     </p>
-                    
                 </div>
             </div>
             <div class="card">
