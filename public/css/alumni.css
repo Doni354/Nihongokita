@@ -114,7 +114,6 @@ body {
   object-fit: cover;
 }
 .card .content {
-  display: flex;
   padding: 20px;
   text-align: center;
 }
