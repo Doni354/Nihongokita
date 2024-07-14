@@ -109,18 +109,3 @@ body {
   width: 500px;
 }
 
-
-
-
-/* Media query untuk layar kecil */
-@media (max-width: 600px) {
-  .linkNews {
-    flex-direction: column; /* Mengubah layout menjadi kolom */
-    align-items: center;    /* Menyusun item di tengah */
-  }
-
-  .linkNews a {
-    margin-bottom: 10px;    /* Memberikan jarak antara item */
-  }
-}
-
