@@ -82,3 +82,45 @@ body {
 @media (max-width: 480px) {
   
 }
+
+
+
+.linkNews {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.cimgl {
+  margin-top: 7px;
+  width: 18px;
+}
+
+.btnlr {
+  margin-top: 50px;
+  width: 125px;
+}
+
+.linkNews a {
+  text-decoration: none; /* Menghilangkan underline */
+}
+
+.plink {
+  width: 500px;
+}
+
+
+
+
+/* Media query untuk layar kecil */
+@media (max-width: 600px) {
+  .linkNews {
+    flex-direction: column; /* Mengubah layout menjadi kolom */
+    align-items: center;    /* Menyusun item di tengah */
+  }
+
+  .linkNews a {
+    margin-bottom: 10px;    /* Memberikan jarak antara item */
+  }
+}
+

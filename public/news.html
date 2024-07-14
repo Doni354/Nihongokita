@@ -23,17 +23,17 @@
 
         .card {
             display: flex;
-            width: 600px;
-            height: 200px;
+            width: 800px;
+            height: 250px;
             background-color: #A72F04;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .card img {
-            width: 200px;
-            height: 200px;
+        .cimg {
+            width: 400px;
+            height: 250px;
             object-fit: cover;
         }
 
@@ -45,7 +45,7 @@
             color: #fff;
             text-align: start; /* Rata kiri pada layar besar */
             overflow-y: auto; /* Aktifkan scroll vertikal jika konten terlalu panjang */
-            max-height: 160px; /* Atur tinggi maksimum konten sebelum muncul scroll */
+            max-height: 200px; /* Atur tinggi maksimum konten sebelum muncul scroll */
         }
 
         .card-content h2 {
@@ -72,7 +72,7 @@
                 flex-direction: column;
             }
 
-            .card img {
+            .cimg {
                 width: 100%;
                 height: auto;
             }
@@ -82,6 +82,7 @@
                 overflow-y: visible; /* Hapus scroll pada layar kecil */
                 max-height: none; /* Resetting max-height untuk konten */
             }
+
         }
     </style>
 </head>
@@ -111,17 +112,29 @@
         <img src="assets/Img/News.svg" alt="News" style="margin-bottom: 20px;">
         <div class="container">
             <div class="card">
-                <img src="assets/Img/Rekrutmen.svg" alt="Rekrutmen">
+                <img class="cimg" src="assets/Img/Rekrutmen.svg" alt="Rekrutmen">
                 <div class="card-content">
                     <h2>REKRUTMEN</h2>
                     <p>Nihonkita membuka pendaftaran ekstrakurikuler tahun 2024 untuk seluruh tingkatan,
                        mulai dari siswa baru kelas 10 sampai kelas 12. Daftarkanlah Dirimu sekarang dan 
-                       jadilah Bagian Dari nihongKita. <br>
-                       <a style="color: white;" href="https://wa.me/6281390863372">0813-9086-3372 (Ardika Sofi)</a> <br>
-                       <a style="color: white;" href="https://www.instagram.com/nihongo.kita/">@nihonkita</a>
+                       jadilah Bagian Dari nihongKita.
+                       <div class="linkNews">
+                        <div class="linkSM plink">
+                            <a style="color: white; font-weight: bold;" href="https://wa.me/6282333989449">
+                                <img class="cimgl" src="assets/Img/WA.svg" alt="">0823-3398-9449 (Eline senpai)
+                            </a> <br>
+                            <a style="color: white; font-weight: bold;" href="https://www.instagram.com/nihongo.kita/">
+                                <img class="cimgl" src="assets/Img/IG.svg" alt=""> @Nihongo.kita
+                            </a>
+                        </div>
+                        <div class="linkReq">
+                            <a href="https://forms.gle/VfLHxZQeEbUdJ5xG8"><img class="btnlr" src="assets/Img/Daftar.svg" alt=""></a>
+                        </div>
+                       </div>
                     </p>
                 </div>
             </div>
+            
            <!-- <div class="card">
                 <img src="https://via.placeholder.com/200" alt="Image 2">
                 <div class="card-content">
